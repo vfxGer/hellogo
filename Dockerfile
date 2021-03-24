@@ -1,13 +1,10 @@
 ############################
 # STEP 1 build executable binary
 ############################
-FROM golang:1.16 AS builder
+FROM golang AS builder
 
 WORKDIR $GOPATH/src/mypackage/myapp/
 COPY . .
-# Fetch dependencies.
-# Using go get.
-RUN go get -d -v
 # Build the binary.
 RUN go build -o /go/bin/hello
 ############################
