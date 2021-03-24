@@ -1,4 +1,4 @@
-# Hello go
+# Hello Go
 I was starting to learn GoLang and I stumbled at the very first hurdle, writing *Hello World*. 
 
 Now it is easy to write hello world, you create a a go file like this:
